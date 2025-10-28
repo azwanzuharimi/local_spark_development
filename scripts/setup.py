@@ -56,7 +56,7 @@ def generate_docker_compose(config):
     compose_content = f'''# Configuration-driven Spark environment
 services:
   spark-master:
-    image: bitnami/spark:${{SPARK_VERSION:-3.5.0}}
+    image: bitnamilegacy/spark:4.0.0-debian-12-r20
     container_name: spark-master
     environment:
       - SPARK_MODE=master
@@ -76,7 +76,7 @@ services:
       - {network_name}
 
   spark-worker:
-    image: bitnami/spark:${{SPARK_VERSION:-3.5.0}}
+    image: bitnamilegacy/spark:4.0.0-debian-12-r20
     container_name: spark-worker
     environment:
       - SPARK_MODE=worker

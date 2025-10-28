@@ -2,6 +2,8 @@
 
 This project sets up a local Apache Spark cluster using Docker Compose, with Jupyter Lab for interactive data analysis using PySpark. **Everything is controlled by a centralized configuration file.**
 
+TLDR: make setup, make build, make up
+
 ## ✨ Features
 
 - **🎛️ Centralized Configuration**: Control everything from `config/config.yaml`
